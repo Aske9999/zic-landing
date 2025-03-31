@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIC Кыргызстан — Оптовые поставки</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <div class="p-6 max-w-3xl mx-auto space-y-8">
+    <div class="flex justify-center">
+      <img src="zic-logo.png" alt="ZIC Logo" class="h-20" />
+    </div>
+
+    <h1 class="text-4xl font-bold text-center">Оптовые поставки моторного масла ZIC</h1>
+    <p class="text-center text-lg text-gray-600">
+      Прямой импорт из Южной Кореи. Гибкие условия для СТО и магазинов.
+    </p>
+
+    <div class="bg-white shadow-md rounded-2xl p-6 space-y-4">
+      <h2 class="text-2xl font-semibold">Почему выбирают нас?</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>✅ Прямые поставки без посредников</li>
+        <li>✅ В наличии топовые позиции: ZIC X7, X9, G-F TOP</li>
+        <li>✅ Доставка по всему Кыргызстану</li>
+        <li>✅ Скидки от объема + бонусы постоянным клиентам</li>
+      </ul>
+    </div>
+
+    <div class="bg-white shadow-md rounded-2xl p-6 space-y-4">
+      <h2 class="text-2xl font-semibold">Оставьте заявку на прайс-лист</h2>
+      <input id="phone" type="tel" placeholder="Ваш номер телефона" class="w-full border rounded-xl p-2" />
+      <button onclick="sendToWhatsApp()" class="w-full bg-green-600 text-white p-2 rounded-xl hover:bg-green-700 transition">
+        Получить прайс в WhatsApp
+      </button>
+    </div>
+
+    <div class="bg-white shadow-md rounded-2xl p-6 space-y-4">
+      <h2 class="text-2xl font-semibold">ZIC майын дүң баада сатуу</h2>
+      <p class="text-gray-700">
+        🇰🇷 Түз импорт Кореядан. СТО жана дүкөндөр үчүн ийкемдүү шарттар.
+      </p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>✅ Ортомчусуз түз жеткирүү</li>
+        <li>✅ Запастагы популярдуу түрлөр: ZIC X7, X9, G-F TOP</li>
+        <li>✅ Кыргызстан боюнча жеткирүү</li>
+        <li>✅ Көбүрөөк алгандарга арзандатуулар жана белектер</li>
+      </ul>
+    </div>
+
+    <div class="text-center text-sm text-gray-400">
+      © 2025 ZIC Кыргызстан. Бардык укуктар корголгон.
+    </div>
+  </div>
+
+  <script>
+    function sendToWhatsApp() {
+      const phone = document.getElementById('phone').value;
+      const message = `Здравствуйте! Хочу получить оптовый прайс-лист на масло ZIC. Мой номер: ${phone}`;
+      const url = `https://wa.me/996704886886?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
